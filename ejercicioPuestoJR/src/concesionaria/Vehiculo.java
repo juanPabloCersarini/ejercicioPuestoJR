@@ -2,9 +2,9 @@ package concesionaria;
 
 /**
  *
- * @author Juan Pablo agregar toString
+ * @author Juan Pablo 
  */
-public abstract class Vehiculo {
+public abstract class Vehiculo implements Comparable<Vehiculo> {
     private String marca;
     private String modelo;
     private double precio;
@@ -34,7 +34,16 @@ public abstract class Vehiculo {
         this.precio = precio;
     }
     
-    @Override
+   public int compareTo(Vehiculo v){
+        if(this.getPrecio()>v.getPrecio()){
+            return -1;
+        }else if(this.getPrecio()>v.getPrecio()){
+            return 0;
+        }else{
+            return 1;
+        }
+   }
+      
     public String toString() {
         return "Marca: "+ marca + " // Modelo: "+ modelo; //To change body of generated methods, choose Tools | Templates.
     }
