@@ -12,4 +12,5 @@ package concesionaria;
 public interface Consultor {
     
     public void mostrarVehiculos();
+    public void mostrarMinMax();
 }

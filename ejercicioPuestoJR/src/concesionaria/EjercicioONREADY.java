@@ -14,7 +14,7 @@ public class EjercicioONREADY {
         suc1.crearSucursal();
         suc1.mostrarVehiculos();
         suc1.mostrarMinMax();
-               
+        suc1.mostrarModeloY();
            
     } 
 }

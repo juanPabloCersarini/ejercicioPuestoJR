@@ -57,6 +57,7 @@ public class Sucursal implements Consultor{
         }
     }
     
+    @Override
     public void mostrarMinMax(){
         int i;
         double min = 0;
@@ -84,6 +85,21 @@ public class Sucursal implements Consultor{
         System.out.println("Vehiculo más barato: " + marcaMin + " " + modeloMin);
     }
         
-        
+      public void mostrarModeloY(){
+          int i;
+          String letraAbuscar = "Y";
+          String marcaE;
+          double precioE;
+          boolean modeloEncontrado = false;
+          for (i=0; i<listaVehiculos.size(); i++){
+              String modelo = listaVehiculos.get(i).getModelo();
+              modeloEncontrado = modelo.contains(letraAbuscar);
+              if (modeloEncontrado){
+                marcaE = listaVehiculos.get(i).getMarca();
+                precioE = listaVehiculos.get(i).getPrecio();
+                System.out.println("Vehículo que contiene en el modelo la letra 'Y': " + marcaE + " " + modelo + " " + precioE);
+              }
+          }
+      }  
     }
 
