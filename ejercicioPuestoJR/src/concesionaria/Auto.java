@@ -16,5 +16,9 @@ public class Auto extends Vehiculo{
         this.puertas = puertas;
     }
     
-    
+    @Override
+    public String toString() {
+        return super.toString() + " // Puertas: "+ puertas; //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

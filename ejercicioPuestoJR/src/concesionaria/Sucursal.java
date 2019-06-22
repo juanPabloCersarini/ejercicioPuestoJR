@@ -22,6 +22,13 @@ public class Sucursal implements Consultor{
         auto1.setPrecio(200000);
         
         listaVehiculos.add(auto1);
+        
+        moto1.setMarca("Yamaha");
+        moto1.setModelo("206");
+        moto1.setCilindradas("160c");
+        moto1.setPrecio(200000);
+        
+        listaVehiculos.add(moto1);
     }
 
     @Override

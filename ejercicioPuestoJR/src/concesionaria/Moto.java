@@ -15,6 +15,8 @@ public class Moto extends Vehiculo{
     public void setCilindradas(String cilindradas) {
         this.cilindradas = cilindradas;
     }
-    
+    public String toString() {
+        return super.toString() + " // Cilindradas: "+ cilindradas; //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

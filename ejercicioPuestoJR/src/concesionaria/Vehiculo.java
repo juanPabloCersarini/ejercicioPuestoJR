@@ -34,5 +34,9 @@ public abstract class Vehiculo {
         this.precio = precio;
     }
     
-    
+    @Override
+    public String toString() {
+        return "Marca: "+ marca + " // Modelo: "+ modelo; //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
